@@ -14,6 +14,9 @@ git clone https://gitlab.com/danielfernandezvega/cloudflow-tools.git
 
 Add the needed script.js in your workflow and you wil got the functions directly into your script node.
 
+![Script node config](https://danielfernandezvega.gitlab.io/img/node-config.png "Script node config")
+
+
 <!-- # Cloudflow Tools
 
 
