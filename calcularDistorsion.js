@@ -3,15 +3,10 @@ function calcularDistorsion(unidades, dimensionesRodillo, calibreFotopolimero) {
     var unidades = unidades;
     if (unidades == "mm") {
         var RL = dimensionesRodillo;
-        console.log(RL);
         var P = (parseFloat(calibreFotopolimero)) * 25.4;
-        console.log(P);
         const PI = 3.141592;
         const M = 0.127;
         var distorsion = (((RL / (2 * PI) + (M - P)) / (RL / (2 * PI))) * 100).toFixed(3);
-        console.log(distorsion);
-        console.log((RL / (2 * PI) + (M - P)));
-        console.log(((RL / (2 * PI))));
         var rodDistorsionado = RL * (distorsion / 100);
         var factorK = RL - rodDistorsionado;
 
@@ -30,9 +25,6 @@ function calcularDistorsion(unidades, dimensionesRodillo, calibreFotopolimero) {
         const PI = 3.141592;
         const M = 0.005;
         var distorsion = (((RL / (2 * PI) + (M - P)) / (RL / (2 * PI))) * 100).toFixed(3);
-        console.log(distorsion);
-        console.log((RL / (2 * PI) + (M - P)));
-        console.log(((RL / (2 * PI))));
         var rodDistorsionado = RL * (distorsion / 100);
         var factorK = RL - rodDistorsionado;
 
