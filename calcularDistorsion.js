@@ -44,7 +44,7 @@ function calcularDistorsion(unidades, dimensionesRodillo, calibreFotopolimero) {
             message: "All ok"
         };
     } else {
-        console.log("Unidades no corresponden, debe usar mm o in")
+        addMessageToLog("error", "Unidades no corresponden, debe usar mm o in")
         var data = {
             value: null,
             rodDistorsionado: null,
