@@ -2,6 +2,17 @@
 
 Cloudflow Tools is a repository of javascript code for Cloudflow enviroment
 
+## Installation
+
+With your command line application navigate to the PP_FILE_STORE into your Cloudflow server and paste the following code:
+
+```bash
+git clone https://gitlab.com/danielfernandezvega/cloudflow-tools.git
+```
+
+## Usage
+
+Add the needed script.js in your workflow and you wil got the functions directly into your script node.
 
 <!-- # Cloudflow Tools
 
