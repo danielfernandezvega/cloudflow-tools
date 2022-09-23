@@ -16,7 +16,7 @@ function calcularDistorsion(unidades, dimensionesRodillo, calibreFotopolimero) {
         var factorK = RL - rodDistorsionado;
 
         var data = {
-            distorsion: distorsion,
+            value: distorsion,
             rodDistorsionado: rodDistorsionado,
             factorK: factorK,
             status: true,
@@ -37,16 +37,16 @@ function calcularDistorsion(unidades, dimensionesRodillo, calibreFotopolimero) {
         var factorK = RL - rodDistorsionado;
 
         var data = {
-            distorsion: distorsion,
+            value: distorsion,
             rodDistorsionado: rodDistorsionado,
             factorK: factorK,
             status: true,
             message: "All ok"
         };
     } else {
-        console.error("Unidades no corresponden, debe usar mm o in")
+        console.log("Unidades no corresponden, debe usar mm o in")
         var data = {
-            distorsion: null,
+            value: null,
             rodDistorsionado: null,
             factorK: null,
             status: false,
