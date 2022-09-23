@@ -14,22 +14,35 @@ git clone https://gitlab.com/danielfernandezvega/cloudflow-tools.git
 
 In the Cloudflow Script node > include scripts:
 
-For create random password function:
+### For create random password function:
 ```bash
 cloudflow://PP_FILE_STORE/cloudflow-tools/createPassword.js
 ```
-### Params:
+#### Params:
+
 None
 
-For calculate print-roll size:
+### For calculate print-roll size:
 ```bash
 cloudflow://PP_FILE_STORE/cloudflow-tools/calcularRodillo.js
 ```
-### Params:
-calcularRodillo(Unit, Teth, PressStep)
-Unit: string ("mm" or "in")
-Teth: number (Teth count of the roll gear)
-PressStep: (Gear teth distance)
+#### Params:
+
+**calcularRodillo(Unit, Teth, PressStep)**
+- Unit: string ("mm" or "in")
+- Teth: number (Teth count of the roll gear)
+- PressStep: number (Gear teth distance)
+
+### For calculate Flexo Distortion:
+```bash
+cloudflow://PP_FILE_STORE/cloudflow-tools/calcularDistorsion.js
+```
+#### Params:
+
+**calcularDistorsion(Unit, rollSize, thickness)**
+- Unit: string ("mm" or "in")
+- rollSize: number (Size of the flexo sheet)
+- thickness: number (Thickness of flexo plate)
 
 
 
