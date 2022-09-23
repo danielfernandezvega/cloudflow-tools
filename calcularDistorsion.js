@@ -52,6 +52,7 @@ function calcularDistorsion(unidades, dimensionesRodillo, calibreFotopolimero) {
             status: false,
             meesage: "Unidades no corresponden, debe usar mm o in"
         };
+        setOutput('failure');
     }
 
 
