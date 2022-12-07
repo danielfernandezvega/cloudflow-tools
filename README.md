@@ -44,6 +44,16 @@ cloudflow://PP_FILE_STORE/cloudflow-tools/calcularDistorsion.js
 - rollSize: number (Size of the flexo sheet)
 - thickness: number (Thickness of flexo plate)
 
+### For make Workflows and HTML backup:
+```bash
+cloudflow://PP_FILE_STORE/cloudflow-tools/backupWorkflows.js
+```
+#### Params:
+
+**whitepaperBackup(params)**
+- params[0]: boolean (true if you need send backup notifications)
+- params[1]: string (Email for notifications)
+- params[2]: number (Amount of days of expire date)
 
 
 <!-- # Cloudflow Tools
